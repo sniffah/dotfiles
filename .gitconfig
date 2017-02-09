@@ -95,3 +95,6 @@
   prune = true
 [diff]
   compactionHeuristic = true
+[user]
+	name = Ian Johannesen
+	email = ij@perlpimp.net
