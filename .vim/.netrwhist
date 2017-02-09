@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/Users/ij/git/rage/hr2social/.git'
+let g:netrw_dirhist_2='/Users/ij/git/rage/partisanattractor'
+let g:netrw_dirhist_3='/Users/ij/git/rage/partisanattractor/admin'
+let g:netrw_dirhist_4='/private/var/www/wp-la.dev/html/wp-content/plugins/ntss-beestrap-linker-plugin'
+let g:netrw_dirhist_5='/Users/ij/git/rage/lacosanostra/frihed/site/dist/scripts/vendor'
+let g:netrw_dirhist_6='/Users/ij/git/rage/lacosanostra/plus/release'
+let g:netrw_dirhist_7='/Users/ij/git/rage/playground/surevote/surevote-backend/src/test/resources/META-INF'
+let g:netrw_dirhist_8='/usr/local/Cellar/storm/0.10.0/libexec/conf'
+let g:netrw_dirhist_9='/Users/ij/.m2'
