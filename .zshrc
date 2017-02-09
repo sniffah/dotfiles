@@ -53,6 +53,11 @@ ZSH_THEME="rkj-repos"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git sshagent zsh_reload)
 
+if [ -f $HOME/.zshrc.local ]
+then
+  source $HOME/.zshrc.local
+fi
+
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
