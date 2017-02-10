@@ -109,4 +109,7 @@ function build_ssh_knownhosts_unixpimpsboxes {
 zstyle ':completion:*' use-ip true
 
 # Do not glob scp and http/https/ftp
-magic zle -N self-insert url-quote-magic zstyle -e :urlglobber url-other-schema \ '[[ $words[1] == scp ]] && reply=("*") || reply=(http https ftp)'
+autoload -U url-quote-magic
+zle -N self-insert url-quote-magic
+zstyle -e :urlglobber url-other-schema \
+'[[ $words[1] == scp ]] && reply=("*") || reply=(http https ftp)'
