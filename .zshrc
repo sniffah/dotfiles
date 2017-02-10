@@ -103,4 +103,8 @@ function build_ssh_knownhosts_unixpimpsboxes {
   done
 }
 
+# Also allow IPs in auto-complete of hostnames
 zstyle ':completion:*' use-ip true
+
+# Do not glob scp and http/https/ftp
+magic zle -N self-insert url-quote-magic zstyle -e :urlglobber url-other-schema \ '[[ $words[1] == scp ]] && reply=("*") || reply=(http https ftp)'
