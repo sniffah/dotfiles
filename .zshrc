@@ -99,6 +99,6 @@ function build_ssh_knownhosts_unixpimpsboxes {
   hosts+=(miller paulaner sanmiguel strongbow tuborg)
   hosts+=("10.255.30.10" "10.255.30.11" "10.255.30.12")
   for hst in $hosts; do
-    ssh-keyscan $hst → $HOME/.ssh/known_hosts;
+    ssh-keyscan $hst >> $HOME/.ssh/known_hosts;
   done
 }
