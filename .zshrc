@@ -89,10 +89,12 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# Config dot files alias
 function config {
-   /usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME $@
+   git --git-dir=$HOME/.cfg/ --work-tree=$HOME $@
 }
 
+# SSH out and sync dotfiles from git
 function build_ssh_knownhosts_unixpimpsboxes {
   rm $HOME/.ssh/known_hosts;
   local hosts=(amstel bluemoon chimay fosters guinness heineken leffe)
