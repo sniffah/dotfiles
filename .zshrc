@@ -94,7 +94,7 @@ function config {
    git --git-dir=$HOME/.cfg/ --work-tree=$HOME $@
 }
 
-# SSH out and sync dotfiles from git
+# Generate shortform key entries in $HOME/.ssh/known_hosts
 function build_ssh_knownhosts_unixpimpsboxes {
   rm $HOME/.ssh/known_hosts;
   local hosts=(amstel bluemoon chimay fosters guinness heineken leffe)
