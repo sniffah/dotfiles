@@ -93,3 +93,12 @@ function config {
    /usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME $@
 }
 
+function build_ssh_knownhosts_unixpimpsboxes {
+  rm $HOME/.ssh/known_hosts;
+  local hosts=(amstel bluemoon chimay fosters guinness heineken leffe)
+  hosts+=(miller paulaner sanmiguel strongbow tuborg)
+  hosts+=("10.255.30.10" "10.255.30.11" "10.255.30.12")
+  for hst in $hosts; do
+    ssh-keyscan $hst → $HOME/.ssh/known_hosts;
+  done
+}
