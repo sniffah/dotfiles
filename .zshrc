@@ -102,3 +102,5 @@ function build_ssh_knownhosts_unixpimpsboxes {
     ssh-keyscan $hst >> $HOME/.ssh/known_hosts;
   done
 }
+
+zstyle ':completion:*' use-ip true
